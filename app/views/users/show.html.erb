@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Emailaddress:</b>
+  <%= @user.eMailAddress %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Verifed:</b>
+  <%= @user.verifed %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @user.parent %>
+</p>
+
+<p>
+  <b>Facebookcredentials:</b>
+  <%= @user.facebookCredentials %>
+</p>
+
+<p>
+  <b>Twittercredentials:</b>
+  <%= @user.twitterCredentials %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @user.firstName %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @user.lastName %>
+</p>
+
+<p>
+  <b>Dateofbirth:</b>
+  <%= @user.dateOfBirth %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @user.state %>
+</p>
+
+<p>
+  <b>Hobbies:</b>
+  <%= @user.hobbies %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @user.website %>
+</p>
+
+<p>
+  <b>Lastaccessdatetime:</b>
+  <%= @user.lastAccessDateTime %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

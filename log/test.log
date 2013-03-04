@@ -1,0 +1,74 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:52', '2013-03-02 20:47:52', 980190962)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:52', '2013-03-02 20:47:52', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:52', '2013-03-02 20:47:52', 298486374)
+  [1m[36m (3.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (3.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (1.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.5ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (29.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.6ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.8ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (3.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (3.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (3.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (3.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 980190962)[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+Mysql2::Error: Duplicate entry '' for key 'index_users_on_email': INSERT INTO `users` (`eMailAddress`, `password`, `verifed`, `parent`, `facebookCredentials`, `twitterCredentials`, `firstName`, `lastName`, `dateOfBirth`, `state`, `hobbies`, `website`, `lastAccessDateTime`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 0, 0, 'MyString', 'MyString', 'MyString', 'MyString', '2013-03-01', 'MyString', 'MyString', 'MyString', '2013-03-01 12:49:31', '2013-03-02 20:47:53', '2013-03-02 20:47:53', 298486374)
+  [1m[36m (16.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
