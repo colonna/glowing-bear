@@ -12,10 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :eMailAddress %><br />
-    <%= f.text_field :eMailAddress %>
+    <strong><%= @user.email %><br /></strong>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :password %><br />
     <%= f.text_field :password %>
   </div>
@@ -34,7 +33,7 @@
   <div class="field">
     <%= f.label :twitterCredentials %><br />
     <%= f.text_field :twitterCredentials %>
-  </div>
+  </div> -->
   <div class="field">
     <%= f.label :firstName %><br />
     <%= f.text_field :firstName %>
@@ -59,10 +58,10 @@
     <%= f.label :website %><br />
     <%= f.text_field :website %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :lastAccessDateTime %><br />
     <%= f.datetime_select :lastAccessDateTime %>
-  </div>
+  </div> -->
   <div class="actions">
     <%= f.submit %>
   </div>

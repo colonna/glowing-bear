@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :dateOfBirth, :eMailAddress, :facebookCredentials, :firstName, :hobbies, :lastAccessDateTime, :lastName, :parent, :password, :state, :twitterCredentials, :verifed, :website
+
+  has_and_belongs_to_many :contacts
 end

@@ -1,4 +1,7 @@
 TeamTracker::Application.routes.draw do
+  resources :contacts
+
+
   devise_for :users
 
   get "home/index"

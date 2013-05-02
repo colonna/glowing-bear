@@ -1,11 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Emailaddress:</b>
-  <%= @user.eMailAddress %>
+  <b><%= @user.email %></b>
 </p>
 
-<p>
+<!-- <p>
   <b>Password:</b>
   <%= @user.password %>
 </p>
@@ -28,7 +27,7 @@
 <p>
   <b>Twittercredentials:</b>
   <%= @user.twitterCredentials %>
-</p>
+</p> -->
 
 <p>
   <b>Firstname:</b>
@@ -60,11 +59,11 @@
   <%= @user.website %>
 </p>
 
-<p>
+<!-- <p>
   <b>Lastaccessdatetime:</b>
   <%= @user.lastAccessDateTime %>
-</p>
+</p> -->
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Back', root_path%>
