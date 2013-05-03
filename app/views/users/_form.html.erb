@@ -10,10 +10,10 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <strong><%= @user.email %><br /></strong>
-  </div>
+   <!-- <strong><%= @user.email %><br /></strong> -->
+  </div>  
+  <div style="margin: 20px">
   <!-- <div class="field">
     <%= f.label :password %><br />
     <%= f.text_field :password %>
@@ -64,5 +64,7 @@
   </div> -->
   <div class="actions">
     <%= f.submit %>
+    <input type="reset">
   </div>
+</div>
 <% end %>

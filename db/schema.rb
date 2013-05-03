@@ -15,10 +15,11 @@ ActiveRecord::Schema.define(:version => 20130426115722) do
 
   create_table "contacts", :force => true do |t|
     t.integer  "userID"
-    t.integer  "userContactID"
-    t.boolean  "isMutual"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.string   "eMail"
+    t.string   "firstName"
+    t.string   "lastName"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|

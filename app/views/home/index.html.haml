@@ -1,12 +1,21 @@
-%h1 
-    Welcome to the new smartsheet!
-- if user_signed_in?
-    %div{:class => "logout"}
-        = link_to('Logout', destroy_user_session_path, :method => :delete)
-    %div{:class => "update-profile"}
-        = link_to 'Update Profile', edit_user_path(current_user.id) 
-- else
-    %div{:class => "register"}
-        = link_to "Register", '/users/sign_up'
-    %div{:class => "sign-in"}
-        = link_to "Sign in", '/users/sign_in'
+%div{:style => 'margin-top: 100px; text-align: center'}
+    - if user_signed_in?
+        %h1= "Welcome to the new smartsheet, #{@user.email}!"
+    - else
+        %h1= "Welcome to the new smartsheet!"
+    - if user_signed_in?
+        -#%div{:class => "logout"}
+            -#= link_to('Logout', destroy_user_session_path, :method => :delete)
+        %div{:class => "update-profile", :style => "text-decoration: none;"}
+            %h4{:style => "text-decoration: none;"}
+                = link_to 'Update Profile', edit_user_path(current_user.id) 
+        %div{:class => "contacts"}
+            %h4
+                = link_to 'Contacts', edit_contact_path(current_user.id)
+    - else
+        %div{:class => "register"}
+            %h4
+                = link_to "Register", '/users/sign_up'
+        %div{:class => "sign-in"}
+            %h4
+                = link_to "Sign in", '/users/sign_in'

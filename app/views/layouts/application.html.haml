@@ -8,9 +8,16 @@
       = javascript_include_tag "application"
       = csrf_meta_tags
       = yield(:head)
-%body
+%body{:style => "width: 1000px"}
    %div{:class => "header-image"}
       %img{:src => "/assets/smartsheet.PNG"}
+   %div{:class => "session-info"}
+      - if user_signed_in?
+         %span{:class => "logout", :style => "float: right;"}
+            = @user.email
+            (
+            = link_to('Logout', destroy_user_session_path, :method => :delete)
+            )
    #main{:role => "main"}
       .container
          .content

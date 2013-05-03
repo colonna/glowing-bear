@@ -1,3 +1,36 @@
+  <!--<p id="notice"><%= flash[:notice] %></p>-->
+  <div class="user">
+    <!--<%= @user.email %>-->
+    <!--<br>
+    <%= @user.id %>-->
+  </div>
+
+  <div class="show-contacts">
+    <% if @contacts.any? %>
+     <!--<%= @contacts.size %>-->
+    <table style="margin: 20px; padding: 20px; border: 1px; border-style: solid;">
+      <tr>
+        <!--<th>Userid</th>-->
+        <th style="min-width: 150px">Email</th>
+        <th style="min-width: 100px">First Name</th>
+        <th style="min-width: 100px">Last Name</th>
+        <th></th>
+        <th></th>
+      </tr>
+    <% @contacts.each do |con| %>
+      <tr>
+        <!--<td><%= con.userID %></td>-->
+        <td style="min-width: 150px"><%= con.eMail %></td>
+        <td style="min-width: 100px"><%= con.firstName %></td>
+        <td style="min-width: 100px"><%= con.lastName %></td>
+        <td style="padding-left: 20px"><%= link_to 'Edit', edit_contact_path(con) %></td>
+        <td><%= link_to 'Delete', con, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+  <% end %>
+  </div>
+
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
@@ -10,16 +43,29 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :userID %><br />
-    <%= f.number_field :userID %>
-  </div>
-  <div class="field">
-    <%= f.label :userContactID %><br />
-    <%= f.number_field :userContactID %>
-  </div>
-  <div class="actions">
+  <div class="add-contacts" style="margin: 20px;">
+    <div class="section-header">
+      <h3>Add a new Contact</h3>
+    </div>  
+    <div class="field">
+      <%= f.label :eMail %><br />
+      <%= f.email_field :eMail %>
+    </div>    
+    <div class="field">
+      <%= f.label :firstName %><br />
+      <%= f.text_field :firstName %>
+    </div>
+    <div class="field">
+      <%= f.label :lastName %><br />
+      <%= f.text_field :lastName %>
+    </div>
+        <div class="field">
+        <input type="hidden" name="contact[userID]" value="<%= @user.id %>" />
+    </div>
+      <div class="actions">
     <%= f.submit %>
+    <input type="reset">
+    <%= link_to 'Home', '/' %> 
+  </div>
   </div>
 <% end %>
