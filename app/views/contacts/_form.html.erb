@@ -23,7 +23,7 @@
         <td style="min-width: 150px"><%= con.eMail %></td>
         <td style="min-width: 100px"><%= con.firstName %></td>
         <td style="min-width: 100px"><%= con.lastName %></td>
-        <td style="padding-left: 20px"><%= link_to 'Edit', edit_contact_path(con) %></td>
+        <td style="padding-left: 20px"><%= link_to 'Edit', :controller => 'contacts', :action => 'edit2', :id => con.id %></td>
         <td><%= link_to 'Delete', con, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -65,7 +65,12 @@
       <div class="actions">
     <%= f.submit %>
     <input type="reset">
-    <%= link_to 'Home', '/' %> 
+    <!--<%= link_to 'Home', '/' %> -->
   </div>
+  </div>
+  <div style="text-align: center;">
+    <h4>
+      <%= link_to 'Go Back', home_index_path(current_user.id) %>
+    </h4>
   </div>
 <% end %>

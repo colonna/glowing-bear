@@ -1,0 +1,40 @@
+<div style="margin-top: 35px; clear:left;">
+  <h1>Update Contact</h1>
+  <div style="margin: 20px; padding: 20px; border: 1px; border-style: solid;">
+<%= form_for(@contact) do |f| %> <!-- #, :url => {:action => 'edit', :id => current_user.id} -->
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :eMail %><br />
+    <%= f.text_field :eMail %>
+  </div>
+  <div class="field">
+    <%= f.label :firstName %><br />
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastName %><br />
+    <%= f.text_field :lastName %>
+  </div>  
+  <div class="actions">
+    <%= f.submit %>
+    <input type="reset">
+  </div>
+<% end %>
+</div>
+  <div style="text-align: center;">
+    <h4>
+      <%= link_to 'Go Back', edit_contact_path(current_user.id) %>
+    </h4>
+  </div>
+</div>

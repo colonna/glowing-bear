@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
-    #redirect_to edit_contact_path(current_user.id)
+    redirect_to edit_contact_path(current_user.id)
     #@contact = Contact.find(params[:id])
 
     #respond_to do |format|
@@ -73,7 +73,8 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.update_attributes(params[:contact])
-        format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
+        #format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
+        format.html { redirect_to edit_contact_path(current_user.id), notice: 'Contact was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -91,6 +92,23 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to edit_contact_path(current_user.id) }
       format.json { head :no_content }
+    end
+  end
+
+  def edit2
+    @contact = Contact.find(params[:id])
+    @user = User.find(current_user.id)
+
+    #@user = User.find(params[:id])
+    #@contacts = Contact.find_all_by_userID(params[:id])
+    #@contact = Contact.new
+    #@contacts = Contact.joins('INNER JOIN users ON users.id = contacts.userContactID').where('contacts.userID' => params[:id])
+    #Client.joins('LEFT OUTER JOIN addresses ON addresses.client_id = clients.id')
+
+
+    respond_to do |format|
+      format.html # edit.html.erb
+      format.json { render json: @contacts }
     end
   end
 end

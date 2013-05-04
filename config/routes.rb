@@ -9,7 +9,8 @@ TeamTracker::Application.routes.draw do
 
   resources :users
   
-
+  match 'contacts/:id/edit2' => 'contacts#edit2'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

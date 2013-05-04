@@ -44,7 +44,8 @@
   </div>
   <div class="field">
     <%= f.label :dateOfBirth %><br />
-    <%= f.date_select :dateOfBirth %>
+    <%= f.date_select :dateOfBirth, :start_year => 1950, :end_year => 2010 %>
+    <!--<%= f.date_select :dateOfBirth %>-->
   </div>
   <div class="field">
     <%= f.label :state %><br />
@@ -66,5 +67,11 @@
     <%= f.submit %>
     <input type="reset">
   </div>
+  <p id="notice"><%= notice %> &nbsp;</p>
 </div>
+  <div style="text-align: center;">
+    <h4>
+      <%= link_to 'Go Back', home_index_path(current_user.id) %>
+    </h4>
+  </div>
 <% end %>
