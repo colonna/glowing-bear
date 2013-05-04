@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  createrID: 1
+  name: MyString
+  type: 1
+  description: MyString
+  location: MyString
+  logo: MyString
+
+two:
+  createrID: 1
+  name: MyString
+  type: 1
+  description: MyString
+  location: MyString
+  logo: MyString

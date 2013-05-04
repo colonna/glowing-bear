@@ -1,4 +1,10 @@
 TeamTracker::Application.routes.draw do
+  resources :team_members
+
+
+  resources :teams
+
+
   resources :contacts
 
 

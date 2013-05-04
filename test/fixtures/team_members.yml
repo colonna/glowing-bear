@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  teamID: 1
+  userID: 1
+  role: 1
+
+two:
+  teamID: 1
+  userID: 1
+  role: 1

@@ -44720,3 +44720,17 @@ Served asset /application.js - 304 Not Modified (3ms)
 
 Started GET "/assets/smartsheet.PNG" for 127.0.0.1 at 2013-05-03 22:43:43 -0400
 Served asset /smartsheet.PNG - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20130301174931)
+Migrating to AddDeviseToUsers (20130302180051)
+Migrating to CreateContacts (20130426115722)
+Migrating to CreateTeams (20130504170425)
+  [1m[35m (85.0ms)[0m  CREATE TABLE `teams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `createrID` int(11), `name` varchar(255), `type` int(11), `description` varchar(255), `location` varchar(255), `logo` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130504170425')[0m
+Migrating to CreateTeamMembers (20130504170604)
+  [1m[35m (9.7ms)[0m  CREATE TABLE `team_members` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `teamID` int(11), `userID` int(11), `role` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (3.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130504170604')[0m
+  [1m[35m (1.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
